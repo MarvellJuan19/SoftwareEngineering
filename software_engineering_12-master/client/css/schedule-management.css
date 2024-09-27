@@ -1,0 +1,147 @@
+#courtDetailDiv {
+    display: flex;
+    gap: 2rem;
+}
+
+#courtDetailDiv > div {
+    width: 50%;
+}
+
+#courtDetailDiv > div:nth-child(1) > img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#courtDetailDiv > div:nth-child(2) {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.grey-line {
+    height: 0.1rem;
+    background-color: #EDEDED;
+}
+
+.sub-form > h1 {
+    margin: 0;
+}
+
+#dateDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 1rem 0;
+}
+
+#dateDiv > input[type="radio"] {
+    display: none;
+}
+
+#dateDiv > input[type="radio"] + label {
+    width: 9rem;
+    height: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #9C9C9C;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    /* padding: 0.5rem 0; */
+}
+
+#dateDiv > input[type="radio"]:checked + label {
+    background-color: #165CD9;
+    color: #fff;
+    border: 1px solid #165CD9;
+}
+
+#scheduleDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.disabledLabel {
+    width: 9rem;
+    height: 4rem;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #EBECEE;
+    border-radius: 1rem;
+    background-color: #EBECEE;
+    color: #C0C1C6;
+}
+
+#scheduleDiv input[type=radio] {
+    display: none;
+}
+
+#scheduleDiv input[type=radio] + label {
+    width: 9rem;
+    height: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #9C9C9C;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+
+    /* padding: 0.5rem 0; */
+}
+
+#scheduleDiv input[type="radio"]:checked + label {
+    background-color: #165CD9;
+    border: 1px solid #165CD9;
+    color: #fff;
+}
+
+#manualBookButton {
+    text-align: center;
+    background-color: #165CD9;
+    padding: 0.75rem 2rem;
+    color: white;
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer; 
+}
+
+.ratingsssss{
+    display: flex;
+}
+
+.ratingsssss p{
+    margin: 0;
+    margin-right: 5px;
+}
+
+.ratingsssss #bintang{
+    color: #FFA534;
+    font-weight: 900;
+}
+
+#renterinfo > div {
+    display: flex;
+}
+
+#renterinfo > div > div:nth-child(1) {
+    width: 20%;
+}
+

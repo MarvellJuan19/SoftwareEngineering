@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./component/navbar/navbar.css">
+    <link rel="stylesheet" href="./component/footer/footer.css">
+    <link rel="stylesheet" href="./component/background/background.css">
+    <link rel="stylesheet" href="./component/register/register.css">
+    <link rel="stylesheet" href="./component/login/login.css">
+    <link rel="stylesheet" href="./css/schedule-management.css">
+</head>
+<body>
+
+    <nav id="nav"></nav>
+    <div id="background"></div>
+    <div id="register" class="form"></div>
+    <div id="login" class="form"></div>
+
+    <div class="min-height-100vh">
+        <h1 class="page-title">Schedule Management</h1>
+
+        <div id="courtDetailDiv"></div>
+
+        <div class="grey-line"></div>
+
+        <div class="sub-form">
+            <h1>Date</h1>
+            <div id="dateDiv"></div>
+        </div>
+
+        <div class="grey-line"></div>
+        
+        <div class="sub-form">
+            <h1>Hour</h1>
+            <div id="scheduleDiv"></div>
+        </div>
+        
+        <input id="hiddenInput" type="hidden" />
+        <div id="resultAfterClickDiv">
+            <div id="manualBookButton" style="display:none">Manual Book</div>
+            <div id="waktu_lewat" style="display:none">waktunya lewat</div>
+            <div id="renterinfo" style="display:none"></div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="./component/navbar/navbar.js"></script>
+    <script type="module" src="./component/footer/footer.js"></script>
+    <script type="module" src="./component/register/register.js"></script>
+    <script type="module" src="./component/login/login.js"></script>
+    <script type="module" src="./component/background/background.js"></script>
+    <script type="module" src="./javascript/schedule-management.js"></script>
+</body>
+</html>

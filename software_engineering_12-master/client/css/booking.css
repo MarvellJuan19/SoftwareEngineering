@@ -1,0 +1,157 @@
+#bookingTable {
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px grey;
+}
+
+#bookingTable tr {
+    width: 100%;
+    /* background-color: black; */
+}
+
+#bookingTable th,
+#bookingTable td {
+    width: calc(100%/7);
+    text-align: center;
+}
+
+#bookingTable td {
+    padding: 0.5rem 1rem;
+}
+
+
+.page-title {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+/* .page-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.page-title > label {
+    background-color: #165CD9;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+} */
+
+.RateButton {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+/* .star {
+    font-size: 10vh;
+    cursor: pointer;
+}
+
+.one {
+    color: rgb(251, 255, 0);
+} */
+
+#pop-up{
+    display: none;
+    position: fixed;
+    width: 50rem;
+    height: 30rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(235, 235, 235);
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.RateButton{
+    align-items: center;
+    border: 2px solid #165CD9;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+    color: white;
+    background-color:#165CD9;
+    transition: background-color 0.5s ease-in-out,  color 0.5s ease-in-out;
+}
+
+.RateButton:hover{
+    background-color: #092d69;
+    color: rgb(225, 225, 225);
+}
+
+#bookingBackground {
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 2;
+}
+
+.div_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  
+  .star_div {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    cursor: pointer;
+  }
+  
+  .star {
+    /* Your existing star styles */
+    font-size: 60px;
+    cursor: pointer;
+    
+  }
+
+  .one{
+    color: #FFA534;
+  }
+
+  
+  .div_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  #rateButton {
+    /* Your existing button styles */
+    margin-top: 5rem;
+    align-items: center;
+    border: 2px solid #165CD9;
+    border-radius: 0.3rem;
+    padding: 8px 24px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+    color: white;
+    background-color:#165CD9;
+    transition: background-color 0.5s ease-in-out,  color 0.5s ease-in-out;
+  }
+  
+  #rateButton:hover {
+    background-color: #092d69;
+    color: rgb(225, 225, 225);
+  }

@@ -1,0 +1,125 @@
+nav {
+    padding: 0 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+}
+
+.backgroundWhite {
+    background-color: white;
+    box-shadow: 0 0 2px grey;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#navLogo > a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: italic;
+    color: #165CD9;
+    transition: color 0.5s ease;
+}
+
+#navLogo > a:hover{
+    color: #092d69;
+}
+
+#guestLink , #renterLink, #ownerLink {
+    gap: 2rem;
+}
+
+#guestLink > a, #renterLink > a, #ownerLink > a {
+    color: #82828E;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+}
+
+#guestLink > a::after, #renterLink > a::after, #ownerLink > a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transition: width 0.5s ease;
+}
+
+#guestLink > a:hover::after, #renterLink > a:hover::after, #ownerLink > a:hover::after {
+    width: 100%;
+}
+
+#guestLink > a:hover, #renterLink > a:hover, #ownerLink > a:hover {
+    color: #000000;
+}
+
+#guestLink > .active::after, #renterLink > .active::after, #ownerLink > .active::after {
+    width: 100%;
+}
+
+#guestLink > .active, #renterLink > .active, #ownerLink > .active {
+    color: #000000;
+}
+
+#guestLink {display: flex;}
+#renterLink {display: none;}
+#ownerLink {display: none;}
+
+#registerButton, #loginButton {
+    border: 2px solid #165CD9;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+#registerButton {
+    color: white;
+    background-color:#165CD9;
+    transition: background-color 0.5s ease-in-out,  color 0.5s ease-in-out;
+}
+
+#registerButton:hover{
+    background-color: #092d69;
+    color: rgb(225, 225, 225);
+}
+
+#loginButton {
+    color: #165CD9;
+    transition: background-color 0.5s ease-in-out,  color 0.5s ease-in-out;
+}
+
+#loginButton:hover{
+    color: rgb(225, 225, 225);
+    background-color: #092d69;
+}
+
+#myAccountButton {
+    display: none;
+    border: 2px solid #165CD9;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+    color: white;
+    background-color:#165CD9;
+    transition: background-color 0.5s ease-in-out,  color 0.5s ease-in-out;
+}
+
+#myAccountButton:hover{
+    color: rgb(225, 225, 225);
+    background-color: #092d69;
+}
